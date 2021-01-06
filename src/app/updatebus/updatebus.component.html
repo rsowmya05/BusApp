@@ -1,0 +1,66 @@
+<nav style="padding: 20px;" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav" style="color: antiquewhite;">
+            <li class="nav-item px-4">Bus Reservation</li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-4" style="color: antiquewhite;">Welcome Admin</li>
+            <li class="nav-item "><a style="color: antiquewhite;" href="#">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">    
+    <div class="row content">
+        <div style="padding: 50px;" class="col-sm-2 sidenav bg-secondary">
+            <p><a style="color: antiquewhite;" href="#" (click)="add()">Add bus details</a></p>
+            <p><a style="color: antiquewhite;" href="#" (click)="update()">Update Details</a></p>
+            <p><a style="color: antiquewhite;" href="#" (click)="delete()">Remove bus</a></p>
+            <p><a style="color: antiquewhite;" href="#" (click)="view()">View All Buses</a></p>
+        </div>
+
+        <div class="justify-content-center col-sm-10 text-left"> 
+            <br>
+            <h3 style="text-align: center;">Update Bus Details</h3>
+
+            <label>Select the Bus Id to Update</label>
+            <select style="width: 350px;" class="form-control">
+
+            </select>
+
+            <form style="align-content: center; width: 350px;justify-content: center;" class="form-group col-xs-2">
+                <label>Bus name</label>
+                <input type="text" class="form-control" size="50" name="name" id="name" placeholder="Enter the Bus Name">
+                <label>Total no of Seats Available</label>
+                <input type="number" class="form-control" name="seat" id="seat" placeholder="Enter the number of seats available">
+                <label>Boarding Point</label>
+                <input type="text" class="form-control" name="boardingPt" id="boardingPt" placeholder="Enter the boarding point">
+                <label>Destination Point</label>
+                <input type="text" class="form-control" name="destPt" id="destPt" placeholder="Enter the destination point">
+                <label>Stops</label>
+                <select class="form-control" name="stop" id="stop">
+                    
+                </select>
+                
+                <label>Arrival</label>
+                <input type="time" class="form-control" name="arrival" id="arrival">
+                <label>Departure</label>
+                <input type="time" class="form-control" name="dept" id="dept">
+                <label>Travel Duration</label>
+                <input type="time" class="form-control" name="duration" id="duration">
+                <label>Date of Travel</label>
+                <input type="date" class="form-control" name="date" id="date">
+                <label>Fare (per seat)</label>
+                <input type="text" class="form-control" name="fare" id="fare" placeholder="Enter the fare per seat">
+                <br>
+                <button class="form-control btn btn-secondary">Update Details</button>
+            </form>
+        </div>      
+    </div>
+</div>
+
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div style="color: white;" class="footnav">Bus Reservation 2021 </div>
+    </nav>
+</div>
